@@ -1,0 +1,57 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "App Alex";
+}
+
+<div class="text-center" id="root">
+
+    <header>
+        <h1>LISTA DELLA SPESA</h1>
+
+        <div class="buttons">
+            <button id="sub" title="Premi per iscriverti" class="btn-classic">Iscriviti</button>
+            <button id="login-btn" title="Premi per accedere" class="btn-classic">Accedi</button>
+        </div>
+
+    </header>
+
+
+    <div class="allPage">
+        
+
+        <main class="editToDo">
+            <div class="toDo-container">
+
+                <h1>Aggiungi i prodotti alla lista della spesa!</h1>
+
+                <div id="toDoList">
+
+                    
+
+                </div>
+                
+
+                <div id="add-act">
+                    <button id="open-source-btn" onclick="openInputs()"><i class="fa-solid fa-square-plus"></i></button>
+
+                    <div id="inputs-container">
+                        <h2>Aggiungi un'attività</h2>
+                        <label for="text-act">Nome attività</label>
+                        <input type="text" min="1" maxlength="24" id="text-act">
+
+                        <button type="submit" class="btn-classic" onclick="addToDo()">Add</button>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+
+
+    </div>
+
+
+</div>

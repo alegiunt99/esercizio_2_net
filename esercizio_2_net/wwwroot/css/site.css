@@ -1,0 +1,198 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background: #31317e;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* UTILITIES */
+
+.btn-classic {
+    background-color: rgb(143, 143, 196);
+    border-radius: 25px;
+    padding: 10px 15px;
+    color: darkblue;
+}
+
+    .btn-classic:hover {
+        background-color: rgb(88, 88, 121);
+        cursor: pointer;
+    }
+
+/* CONTENT  */
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(27, 27, 73);
+    color: white;
+    padding: 0 20px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    padding-top: 85px;
+    float: left;
+    width: 300px;
+    background-color: rgb(41, 41, 104);
+    position: fixed;
+    height: 100vh;
+}
+
+.editToDo {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 49, 126);
+    min-height: 100vh;
+    padding-top: 85px;
+}
+
+#doneAct-section {
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+    #doneAct-section h2 {
+        color: lightblue;
+    }
+
+    #doneAct-section #done-act {
+        width: 87%;
+        margin: 5px auto;
+        background-color: lightblue;
+        color: darkred;
+    }
+
+
+.toDo-container {
+    width: 51%;
+    margin: 80px auto;
+}
+
+.toDo-container h1{
+    color: white;
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+#toDo-act {
+    background-color: rgb(143, 143, 196);
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    text-align: start;
+    display: none;
+    align-items: center;
+    gap: 20px;
+    margin-top: 22px;
+}
+
+    #toDo-act i.fa-square-xmark {
+        font-size: 23px;
+        color: rgb(41 41 104);
+    }
+
+        #toDo-act i.fa-square-xmark:hover {
+            color: greenyellow;
+            cursor: pointer;
+        }
+
+    #toDo-act p {
+        font-size: 25px;
+        color: #292968;
+        margin-bottom: 0;
+    }
+
+    #toDo-act span {
+        font-size: 17px;
+        color: #4c4e91;
+    }
+
+#add-act #open-source-btn {
+    border: none;
+    background-color: transparent;
+    color: rgb(143, 143, 196);
+    font-size: 35px;
+}
+
+#add-act{
+    text-align: start;
+}
+    #add-act #open-source-btn:hover {
+        color: rgb(103, 103, 141);
+        cursor: pointer;
+    }
+
+
+#inputs-container {
+    display: none;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgb(190 190 231);
+    border-radius: 20px;
+    box-shadow: 11px 13px 10px rgb(27 27 73);
+    max-width: 560px;
+}
+
+    #inputs-container label,
+    #inputs-container button {
+        margin-top: 20px;
+    }
+
+
+    #inputs-container button {
+        width: 30%;
+    }
+
+    #open-source-btn{
+        text-align:start;
+    }
+@media screen and (max-width: 380px) {
+
+    aside {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.3rem;
+    }
+
+    .btn-classic {
+        font-size: 12px;
+    }
+
+}
